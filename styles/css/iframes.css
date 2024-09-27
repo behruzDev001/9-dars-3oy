@@ -1,0 +1,119 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.hero {
+  background-color: #007bff;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.iframe-task {
+  padding: 2rem;
+  text-align: center;
+}
+
+.custom-iframe {
+  width: 90%;
+  height: 300px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+}
+
+.color-task {
+  padding: 2rem;
+  text-align: center;
+}
+
+button {
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.rgb-btn {
+  background-color: rgb(0, 128, 255);
+  color: white;
+}
+
+.rgba-btn {
+  background-color: rgba(0, 128, 255, 0.7);
+  color: white;
+}
+
+.hex-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 400px) {
+  .menu-btn {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links li {
+    margin: 1rem 0;
+  }
+}/*# sourceMappingURL=iframes.css.map */

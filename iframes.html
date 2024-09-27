@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iframes & Colors Practice</title>
+<link rel="stylesheet" href="./styles/css/minified/iframes.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Iframes & Colors</div>
+      <button class="menu-btn">☰</button>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./media.html">Media</a></li>
+        <li><a href="./iframes.html">Iframes & Colors</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Iframes & Colors Practice</h1>
+    <p>Learn how to embed iframes and use different color types in CSS.</p>
+  </section>
+
+  <section class="iframe-task">
+    <h2>Iframe Task</h2>
+    <p>Embed an iframe displaying a webpage, with custom styling:</p>
+    <iframe src="https://example.com" class="custom-iframe"></iframe>
+  </section>
+
+  <section class="color-task">
+    <h2>Color Types Task</h2>
+    <p>Style elements using different color types:</p>
+    <button class="rgb-btn">RGB Color</button>
+    <button class="rgba-btn">RGBA Color with Opacity</button>
+    <button class="hex-btn">HEX Color</button>
+  </section>
+
+  <footer>
+    <p>© 2024 Media and Color Practice</p>
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
